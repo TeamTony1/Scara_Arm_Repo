@@ -1,0 +1,510 @@
+{
+  "uuid": "8295dcbe1da5c4c01c1edc6b8993b29b",
+  "path": "Offline/Scara_Arm",
+  "name": "Scara_Arm",
+  "content": "",
+  "created_at": "2023-10-24 13:29:07",
+  "updated_at": "2023-11-01 07:14:13",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "e2221f7fb2089ad1dbc391a16814b2ff",
+      "title": "Schematic_Scara_Arm",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "b865a774faa64d8db42c7a6d895c8f23": 1,
+        "652b4ad8dfe84f58bc64c7f1279c6209": 1,
+        "245526444bbe85b260f4b99a6aa28864": 1,
+        "da41a16b2903468a8608da448e0ec4f7": 4,
+        "30c039994f2d490caabc31e0f9b023ad": 1,
+        "e7e2b13674864801840455d400022d99": 1,
+        "ebf87b771fca429b810052cffdd48e69": 1,
+        "e604f572c9ec493e8dc98c980c7844ab": 1,
+        "7c057bf7aba64bdebbaf19f6570a5dfd": 2,
+        "e6d5c83be6d5467eab2963a2671d28b8": 1,
+        "55f6120eda647ce3e74fa7aca715876c": 1,
+        "b9d7f75a05124ce08e480c50b2e26aa0": 1,
+        "cc67ce774b444013a0964d6874291260": 1,
+        "4f453a9f09764829973f94440fb5021b": 1,
+        "a74ab4b395ad4b2f9c4c3929ee42c4b9": 1,
+        "d9621bb7d71a47a5bc23c3b0ee47f5d2": 2,
+        "f746bf5632304db3ad7bddf3e1f49058": 1,
+        "fd85a40c12ac4a0aa5d417ef5674e559": 5,
+        "df599dba99d549c2b99526122f89d8a6": 1,
+        "cf6eca9c9efe444882712b3d5cec1885": 1,
+        "f16b85e2f41549b7822c1879f71c7b93": 2,
+        "65ab4def3858498eb0ddcc3969b3bec4": 1,
+        "14ac591dd4ee4355ac2c3031042b63d4": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "10uF",
+          4,
+          "CAP-SMD_L2.0-W1.2",
+          "C1,C2,C3,C4",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C313067",
+            "Manufacturer": "Kyocera AVX",
+            "Manufacturer Part": "TLJR106M010R2000",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C313067&%26type=1&ref=editor",
+            "spiceSymbolName": "TLJR106M010R2000",
+            "puuid": "67a89259ea1b4f599f6ba40f72beeea3",
+            "uuid": "da41a16b2903468a8608da448e0ec4f7"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "C0805",
+          "C5,C7",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C3830192",
+            "Manufacturer": "TDK",
+            "Manufacturer Part": "C2012X7R1V105M085AB",
+            "link": "https://lcsc.com/eda_search?q=C3830192&%26type=1&ref=editor",
+            "spiceSymbolName": "C2012X7R1V105M085AB",
+            "puuid": "2ee8eb13a0124a108e622ce40c0c25a8",
+            "uuid": "f16b85e2f41549b7822c1879f71c7b93"
+          }
+        ],
+        [
+          "2.2uF",
+          1,
+          "C0603",
+          "C6",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C531426",
+            "Manufacturer": "TDK",
+            "Manufacturer Part": "CGA3E3X5R1A225KT0Y0N",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C531426&%26type=1&ref=editor",
+            "spiceSymbolName": "CGA3E3X5R1A225KT0Y0N",
+            "puuid": "f8151fdc728a41ebbc304e11d39e5437",
+            "uuid": "14ac591dd4ee4355ac2c3031042b63d4"
+          }
+        ],
+        [
+          "22pF",
+          2,
+          "C0201",
+          "C8,C9",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2858006",
+            "Manufacturer": "Kyocera AVX",
+            "Manufacturer Part": "CM03CG220J50AH",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C2858006&%26type=1&ref=editor",
+            "spiceSymbolName": "CM03CG220J50AH",
+            "puuid": "6eac4f0790224a4390e316fa1c7bfc0a",
+            "uuid": "d9621bb7d71a47a5bc23c3b0ee47f5d2"
+          }
+        ],
+        [
+          "GSOT05C",
+          1,
+          "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+          "D1",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2841450",
+            "Manufacturer": "TECH PUBLIC(台舟)",
+            "Manufacturer Part": "GSOT05C",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C2841450&%26type=1&ref=editor",
+            "spiceSymbolName": "GSOT05C",
+            "puuid": "bade90667a6e4731855e9a223387b8a6",
+            "uuid": "e604f572c9ec493e8dc98c980c7844ab"
+          }
+        ],
+        [
+          "BAT54CLT1G",
+          1,
+          "SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
+          "D2",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "onsemi(安森美)",
+            "Manufacturer Part": "BAT54CLT1G",
+            "Supplier Part": "C14308",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C14308&%26type=1&ref=editor",
+            "spiceSymbolName": "BAT54CLT1G",
+            "puuid": "b3b82869fa924bae820e3a6cfb44d689",
+            "uuid": "55f6120eda647ce3e74fa7aca715876c"
+          }
+        ],
+        [
+          "DC-050-2.0-R",
+          1,
+          "DC-IN_DC-050-2.0-BB",
+          "DC1",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C521454",
+            "Manufacturer": "USAKRO(美韩)",
+            "Manufacturer Part": "DC-050-2.0-R",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C521454&%26type=1&ref=editor",
+            "spiceSymbolName": "DC-050-2.0-R",
+            "puuid": "8471a47cd6194802b0809047a0456b7e",
+            "uuid": "30c039994f2d490caabc31e0f9b023ad"
+          }
+        ],
+        [
+          "LED-0603_G",
+          1,
+          "LED0603_GREEN",
+          "L1",
+          {
+            "Manufacturer": "EVERLIGHT(台湾亿光)",
+            "Manufacturer Part": "19-217/GHC-YR1S2/3T",
+            "Supplier Part": "C72043",
+            "Supplier": "LCSC",
+            "link": "",
+            "Contributor": "LCEDA_Lib",
+            "spiceSymbolName": "LED-0603_G",
+            "puuid": "7b706fa666744f94a830dffb572df5db",
+            "uuid": "cf6eca9c9efe444882712b3d5cec1885"
+          }
+        ],
+        [
+          "330Ω",
+          1,
+          "R0402",
+          "R1",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C517531",
+            "Manufacturer": "UNI-ROYAL(厚声)",
+            "Manufacturer Part": "TC0250D3300TCC",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C517531&%26type=1&ref=editor",
+            "spiceSymbolName": "TC0250D3300TCC",
+            "puuid": "fafd024f554e426eb74cf4a204aa88b0",
+            "uuid": "e6d5c83be6d5467eab2963a2671d28b8"
+          }
+        ],
+        [
+          "0Ω",
+          1,
+          "R0805",
+          "R2",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2907288",
+            "Manufacturer": "FOJAN(富捷)",
+            "Manufacturer Part": "FRC0805P000 TS",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C2907288&%26type=1&ref=editor",
+            "spiceSymbolName": "FRC0805P000 TS",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "cc67ce774b444013a0964d6874291260"
+          }
+        ],
+        [
+          "33Ω",
+          2,
+          "R0402",
+          "R3,R4",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C208868",
+            "Manufacturer": "大毅科技",
+            "Manufacturer Part": "RMS04FT33R0",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C208868&%26type=1&ref=editor",
+            "spiceSymbolName": "RMS04FT33R0",
+            "puuid": "fafd024f554e426eb74cf4a204aa88b0",
+            "uuid": "7c057bf7aba64bdebbaf19f6570a5dfd"
+          }
+        ],
+        [
+          "4.7kΩ",
+          1,
+          "R0402",
+          "R5",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Manufacturer": "YAGEO(国巨)",
+            "Manufacturer Part": "AC0402JR-074K7L",
+            "Supplier Part": "C144709",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C144709&%26type=1&ref=editor",
+            "spiceSymbolName": "AC0402JR-074K7L",
+            "puuid": "fafd024f554e426eb74cf4a204aa88b0",
+            "uuid": "65ab4def3858498eb0ddcc3969b3bec4"
+          }
+        ],
+        [
+          "10kΩ",
+          5,
+          "R0805",
+          "R10,R13,R14,R15,R17",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2090476",
+            "Manufacturer": "TE Connectivity(美国泰科)",
+            "Manufacturer Part": "CRG0805F10K/10",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C2090476&%26type=1&ref=editor",
+            "spiceSymbolName": "CRG0805F10K/10",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "fd85a40c12ac4a0aa5d417ef5674e559"
+          }
+        ],
+        [
+          "MKL25Z32VFT4",
+          1,
+          "QFN-48_L7.0-W7.0-P0.50-TL-EP5.2",
+          "U1",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1338609",
+            "Manufacturer": "NXP(恩智浦)",
+            "Manufacturer Part": "MKL25Z32VFT4",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C1338609&%26type=1&ref=editor",
+            "spiceSymbolName": "MKL25Z32VFT4",
+            "puuid": "c88be044a482418aa7889819570817b4",
+            "uuid": "b865a774faa64d8db42c7a6d895c8f23"
+          }
+        ],
+        [
+          "L293DD013TR",
+          1,
+          "SOP-20_L13.2-W7.8-P1.27-LS10.4-BL",
+          "U2",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "ST(意法半导体)",
+            "Manufacturer Part": "L293DD013TR",
+            "Supplier Part": "C21610",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C21610&%26type=1&ref=editor",
+            "spiceSymbolName": "L293DD013TR",
+            "puuid": "a8db1da4777346f498af13cf7ad214e0",
+            "uuid": "652b4ad8dfe84f58bc64c7f1279c6209"
+          }
+        ],
+        [
+          "AMS1117-5.0",
+          1,
+          "SOT-223_L6.5-W3.5-P2.30-LS7.0-BR",
+          "U3",
+          {
+            "sourceId": "HltLFyQwq",
+            "timeStamp": "1466676067",
+            "Supplier": "LCSC",
+            "Manufacturer": "AMS",
+            "Manufacturer Part": "AMS1117-5.0",
+            "Supplier Part": "C6187",
+            "JLCPCB Part Class": "Basic Part",
+            "link": "https://lcsc.com/eda_search?q=C6187&%26type=1&ref=editor",
+            "spiceSymbolName": "AMS1117-5.0",
+            "puuid": "4ca399a3887148eeab92cd3a98a855b3",
+            "uuid": "245526444bbe85b260f4b99a6aa28864"
+          }
+        ],
+        [
+          "LM1117MPX-3.3/NOPB",
+          1,
+          "SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR",
+          "U5",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "TI(德州仪器)",
+            "Manufacturer Part": "LM1117MPX-3.3/NOPB",
+            "Supplier Part": "C9662",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C9662&%26type=1&ref=editor",
+            "spiceSymbolName": "LM1117MPX-3.3/NOPB",
+            "puuid": "02ae667aca734971be8a5f58143dd564",
+            "uuid": "e7e2b13674864801840455d400022d99"
+          }
+        ],
+        [
+          "2541FV-2X4P",
+          1,
+          "HDR-TH_8P-P2.54-V-F-R2-C4-S2.54",
+          "U6",
+          {
+            "Supplier": "LCSC",
+            "Supplier Part": "C18723055",
+            "Manufacturer": "HanElectricity(瀚源)",
+            "Manufacturer Part": "2541FV-2x4P",
+            "Contributor": "lcsc",
+            "link": "https://lcsc.com/eda_search?q=C18723055&%26type=1&ref=editor",
+            "spiceSymbolName": "2541FV-2X4P",
+            "puuid": "e9cb1663613c46dfa133c4b24eed6a8a",
+            "uuid": "b9d7f75a05124ce08e480c50b2e26aa0"
+          }
+        ],
+        [
+          "MK20DX128VFM5",
+          1,
+          "QFN-32_L5.0-W5.0-P0.50-TL-EP",
+          "U7",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C190774",
+            "Manufacturer": "NXP(恩智浦)",
+            "Manufacturer Part": "MK20DX128VFM5",
+            "link": "https://lcsc.com/eda_search?q=C190774&%26type=1&ref=editor",
+            "spiceSymbolName": "MK20DX128VFM5",
+            "puuid": "a0d905ae1c5f4e0ab4d9aeb602b46185",
+            "uuid": "4f453a9f09764829973f94440fb5021b"
+          }
+        ],
+        [
+          "EVQ-PE105K",
+          1,
+          "SW-SMD_L6.0-W3.5-LS7.2",
+          "U11",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C4364417",
+            "Manufacturer": "PANASONIC(松下)",
+            "Manufacturer Part": "EVQ-PE105K",
+            "link": "https://lcsc.com/eda_search?q=C4364417&%26type=1&ref=editor",
+            "spiceSymbolName": "EVQ-PE105K",
+            "puuid": "41895748863542508a5281f6d948a6d2",
+            "uuid": "f746bf5632304db3ad7bddf3e1f49058"
+          }
+        ],
+        [
+          "SN74LVC125ADB",
+          1,
+          "SSOP-14_L6.2-W5.3-P0.65-LS7.8-BL",
+          "U12",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C3753978",
+            "Manufacturer": "TI(德州仪器)",
+            "Manufacturer Part": "SN74LVC125ADB",
+            "link": "https://lcsc.com/eda_search?q=C3753978&%26type=1&ref=editor",
+            "spiceSymbolName": "SN74LVC125ADB",
+            "puuid": "70c74b39b0564251868318e4e87b84ef",
+            "uuid": "df599dba99d549c2b99526122f89d8a6"
+          }
+        ],
+        [
+          "MICROXNJ",
+          1,
+          "MICRO-USB-SMD_MICROXNJ",
+          "USB1",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C404969",
+            "Manufacturer": "SHOU HAN(首韩)",
+            "Manufacturer Part": "MicroXNJ",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C404969&%26type=1&ref=editor",
+            "spiceSymbolName": "MICROXNJ",
+            "puuid": "53bbe01a5e5c4958ba8b22d279d0d9e5",
+            "uuid": "ebf87b771fca429b810052cffdd48e69"
+          }
+        ],
+        [
+          "8MHz",
+          1,
+          "CRYSTAL-SMD_4P-L5.0-W3.2-BL-7I12288F20UCG",
+          "X1",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2921045",
+            "Manufacturer": "TROQ(创捷)",
+            "Manufacturer Part": "RH08000474",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C2921045&%26type=1&ref=editor",
+            "spiceSymbolName": "RH08000474",
+            "puuid": "fb0440a4c76d4a5aac09dbb38c5ac98d",
+            "uuid": "a74ab4b395ad4b2f9c4c3929ee42c4b9"
+          }
+        ]
+      ],
+      "updateTime": 1698609205,
+      "createTime": 1698154147,
+      "histories": [],
+      "created_at": "2023-10-24 13:29:07",
+      "updated_at": "2023-10-29 19:53:25"
+    },
+    {
+      "uuid": "891851edebc2e0363f50c156a193667c",
+      "puuid": "8295dcbe1da5c4c01c1edc6b8993b29b",
+      "title": "PCB_Scara_Arm",
+      "filename": "PCB_Scara_Arm.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "b60f399a7a7e41848b2be1eb49c79141": 6,
+        "2ee8eb13a0124a108e622ce40c0c25a8": 2,
+        "f8151fdc728a41ebbc304e11d39e5437": 1,
+        "a0d905ae1c5f4e0ab4d9aeb602b46185": 1,
+        "41895748863542508a5281f6d948a6d2": 1,
+        "70c74b39b0564251868318e4e87b84ef": 1,
+        "fb0440a4c76d4a5aac09dbb38c5ac98d": 1,
+        "6eac4f0790224a4390e316fa1c7bfc0a": 2,
+        "7b706fa666744f94a830dffb572df5db": 1,
+        "fafd024f554e426eb74cf4a204aa88b0": 4,
+        "67a89259ea1b4f599f6ba40f72beeea3": 4,
+        "bade90667a6e4731855e9a223387b8a6": 1,
+        "b3b82869fa924bae820e3a6cfb44d689": 1,
+        "8471a47cd6194802b0809047a0456b7e": 1,
+        "c88be044a482418aa7889819570817b4": 1,
+        "a8db1da4777346f498af13cf7ad214e0": 1,
+        "4ca399a3887148eeab92cd3a98a855b3": 1,
+        "02ae667aca734971be8a5f58143dd564": 1,
+        "e9cb1663613c46dfa133c4b24eed6a8a": 1,
+        "53bbe01a5e5c4958ba8b22d279d0d9e5": 1
+      },
+      "BOM": [],
+      "updateTime": 1698822853,
+      "createTime": 1698190368,
+      "histories": [],
+      "created_at": "2023-10-24 23:32:48",
+      "updated_at": "2023-11-01 07:14:13"
+    }
+  ],
+  "sort": [
+    "e2221f7fb2089ad1dbc391a16814b2ff",
+    "2ecbcc39ebd653dade0de64f27c4505d"
+  ],
+  "title": "Scara_Arm",
+  "foldername": "Scara_Arm",
+  "schfilename": "Scara_Arm.json",
+  "schfilemtime": 1698609205257
+}
