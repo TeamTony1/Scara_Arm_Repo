@@ -32,7 +32,7 @@ float rad2deg(float rad);
 void ReadCord(void);
 void home(void);
 void pick(void);
-// int16_t RangeRead(void);
+int16_t RangeRead(void);
 // void buzz(void);
 
 
@@ -62,8 +62,8 @@ int main()
     joint1.period_ms(MOTOR_PERIOD); // set the joint period to 20ms and frequency to 50Hz
     joint2.period_ms(MOTOR_PERIOD);
 
-    uart.set_baud(UART_BAUD); 
-    rangeSensor.frequency(I2C_FREQUENCY);
+    uart.set_baud(UART_BAUD);  // set the uart baudrate to 9600
+    rangeSensor.frequency(I2C_FREQUENCY); // set the frequency of the I2C to 100KHz
 
     redLed.write(off); // turn on red led and the rest is turned off 
     yellowLed.write(on);
@@ -72,9 +72,6 @@ int main()
 
     while(1)
     { 
-
-        // readVal = RangeRead(); /
-        // printf("distance is: %u\n", readVal);
 
 
         if (uart.readable()) // check if uart is readable
@@ -168,9 +165,6 @@ void ReadCord(void) // read the x and y coordinates from the pc through UART
                     // Move to the next character and convert to float
                     cord2 = atof(value2_str + 1);
 
-                    // Now, you have value1 and value2 with the received float values
-                    // You can use these values for further processing.
-
                     // Reset the buffer index for the next data
                     buffer_index = 0;
                 }
@@ -197,55 +191,54 @@ void home(void) // move the joints(motors) to to home positions
 
 void pick(void) // pick object 
 {
-    // while(readVal > 5)
-    // {
-    //     dcForward.write(on);
-    //     dcReverse.write(off);
-    //     readVal = RangeRead();
-    //     wait_us(WAIT_500MS);
+     while(readVal > 2) // check if the distance between the end-effector and the object is greater than 2mm then move the end-effector down
+     {
+         dcForward.write(on);
+         dcReverse.write(off);
+         readVal = RangeRead();
 
-    //   printf("distance is: %u\n", readVal);
-    // }
+       // printf("distance is: %u\n", readVal);
+     }
     
-    dcForward.write(on); // moves the end-effector down
-    dcReverse.write(off);
-    wait_us(WAIT_6S);
+    // dcForward.write(on); // moves the end-effector down
+    // dcReverse.write(off);
+    // wait_us(WAIT_6S);
 
-    dcForward.write(off); // activates magnet to pick object
-    dcReverse.write(off);
-    magnent.write(on); 
-    wait_us(WAIT_2S);
+     dcForward.write(off); // activates magnet to pick object
+     dcReverse.write(off);
+     magnent.write(on); 
+     wait_us(WAIT_2S);
 
-    dcForward.write(off); // moves the end-effector up
-    dcReverse.write(on);
-    wait_us(WAIT_5S);
+    // dcForward.write(off); // moves the end-effector up
+    // dcReverse.write(on);
+    // wait_us(WAIT_5S);
 
-    // while(readVal < 70)
-    // {  
-    //     dcForward.write(off);
-    //     dcReverse.write(on);
-    //     readVal = RangeRead();
-    //     wait_us(WAIT_500MS);
+     while(readVal < 150) // check if the distance between the end-effector and the object is less than 150mm then move the end-effector up
+     {  
+         dcForward.write(off);
+         dcReverse.write(on);
+         readVal = RangeRead();
 
-    //     printf("distance is: %u\n", readVal);
-    // }
+         // printf("distance is: %u\n", readVal);
+     }
 
-    dcForward.write(off); // stops the dc motor
+    // stops the dc motor
+    dcForward.write(off); 
     dcReverse.write(off);
     wait_us(WAIT_1S);
 
 }
 
-// int16_t RangeRead(void) // reads the distance the end-effector has to travel from the range sensor
-// {
-//     char command= 0x00;
-//     rangeSensor.write(I2C_ADDRESS, &command, 1);
-//     wait_us(30000);
-//     char data[2]; 
-//     rangeSensor.read(I2C_ADDRESS, data, 2);
-//     int16_t distance = ((data[0] << 8) | data[1]);
-//     return distance;
-// }
+int16_t RangeRead(void) // reads the distance the end-effector has to travel from the range sensor
+{
+    char command= 0x00;
+    rangeSensor.write(I2C_ADDRESS, &command, 1);
+    wait_us(30000);
+    char data[2]; 
+    rangeSensor.read(I2C_ADDRESS, data, 2);
+    int16_t distance = ((data[0] << 8) | data[1]);
+    return distance;
+}
 
 
 // void buzz(void) // turns on the buzzer
